@@ -1,0 +1,29 @@
+{% extends 'Layout.html' %}
+{% block content %}
+<div class="container-fluid" style="background-color:#272626;color:#DBD7D6;padding:30px;text-align:justify;">
+<table class="table table-striped table-dark table-bordered table-hover">
+<thead>
+<tr>
+<th scope="col">#</th>
+<th scope="col">Semester</th>
+<th scope="col">Branch</th>
+<th scope="col">Subject</th>
+<th scope="col">View Notes</th>
+<th scope="col">Download Notes</th>
+</tr>
+</thead>
+<tbody>
+{% for i in data %}
+<tr>
+<th scope="row"><i class="fa fa-dot-circle-o"></i></th>
+<td>{{i.semester}}</td>
+<td>{{i.branch}}</td>
+<td>{{i.subject}}</td>
+<td><a href="{{i.file.url}}" class="text-danger" target="blank">View</a></td>
+<td><a href="{{i.file.url}}" download class="text-danger">Download</a></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endblock  %}

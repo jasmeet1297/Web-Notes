@@ -1,0 +1,43 @@
+28/02/2019
+
+1. Program to check a given integer is odd or even.
+2. Program to check a given integer is odd or even without using % operator.
+
+3. Program to find sum of digits of a number.
+
+4. Program to check whether given number is binary number or not.
+
+5. Program to find number of 1's in a given binary number.
+
+6. Program to convert a binary number into decimal number.
+
+7. Program to convert given no of days into years months and days.
+
+8. Program to reverse a number and check if it is palindrome or not.
+
+9. Program to add two binary numbers.
+
+10. Program to generate fibbonacci series.
+
+1/3/2019
+
+1. Remove Duplicate consecutive characters from string.
+
+Ex - input  aaabbabaaab
+      
+ Output ababab
+
+
+2. Find size of int without using sizeof operator.
+
+
+3. Find if a number can be expressed as product of two prime numbers. If yes find those numbers.
+
+
+4. Find postfix notation of a given infix notation.
+
+
+5. Find the sum of all the numbers in a string.
+Ex "20,13,5,7,89,16"
+
+Output 150

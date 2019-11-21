@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+<title>Engineering Notes</title>
+<link rel="icon" href="../static/nri.png">
+<style>
+body{
+	font-family: 'Kanit', sans-serif;
+}
+</style>
+</head>
+<body>
+<div style="padding:10px;background-color:#DBD7D6;font-size:30px;text-align:center;">Engineering Notes for B.E. &amp; B.Tech Students</div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-danger">
+<a class="navbar-brand" href="/" style="font-size:40px;"><img src="../static/nri.png" width="60px" height="60px"/>Engineering Notes</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>                                        
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:25px;">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="/" style="color:white;" onmouseover="this.style.color='#DBD7D6';" onmouseout="this.style.color='white';">Home</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/Notes" style="color:white;" onmouseover="this.style.color='#DBD7D6';" onmouseout="this.style.color='white';">Notes</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/About" style="color:white;" onmouseover="this.style.color='#DBD7D6';" onmouseout="this.style.color='white';">About</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/AdminLogin" style="color:white;" onmouseover="this.style.color='#DBD7D6';" onmouseout="this.style.color='white';">AdminLogin</a>
+</li>
+</ul>
+</div>
+</nav>
+{% block content %}
+
+{% endblock %}
+<br/>
+<div class="container-fluid" style="background-color:#272626;color:#DBD7D6;padding:20px;">
+<div class="row">
+<div class="col-md-3">
+<h1 style="border-bottom:2px solid blue;width:180px;">Subscribe</h1>
+<form method="post" action="/Subscribe/" style="padding:10px;border:1px dashed white;border-top:1px solid blue;">
+{% csrf_token %}
+<label style="font-size:20px;">Name</label>
+<input type="text" class="form-control" name="fullname">
+<label style="font-size:20px;">Email-ID</label>
+<input type="email" class="form-control" name="email"><br/>
+<button type="submit" class="btn btn-default form-control" style="background-color:grey;">Subscribe</button>
+</form>
+</div>
+<div class="col-md-5">
+<h1 style="border-bottom:2px solid blue;width:130px;">Quotes</h1>
+<div style="padding:10px;border:1px dashed white;border-top:1px solid blue;">
+<ul type="square" style="font-style:italic;font-size:25px;">
+<li>It does not matter how slowly you go as long as you do not stop.</li>
+<li>Failure will never overtake me if my determination to succeed is strong enough.</li>
+<li>Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.</li>
+<li>Success is more than a few simple disciplines, practiced every day.</li>
+<li>Good, better, best. Never let it rest. til your good is better and your better is best.</li>
+</div>
+</div>
+<div class="col-md-4">
+<h1 style="border-bottom:2px solid blue;width:230px;">Contact Us</h1>
+<div style="padding:10px;border:1px dashed white;border-top:1px solid blue;">
+Jasmeet Kaur<br/>Mobile : +91 9644067028<br/>Email : jasmeetkaursekhon12@gmail.com<br/><br/>
+Ankit Singh<br/>Mobile : +91 8120728743<br/>Email : Kunwarankit.singh22@gmail.com<br/><br/>
+Anshul Yadav<br/>Mobile : +91 9752907197<br/>Email : Yanshul480@gmail.com<br/><br/>
+Rajat Yadav<br/>Mobile : +91 7024716212<br/>Email : rajatyadav7024@gmail.com<br/><br/>
+Rahul Dubey<br/>Mobile : +91 7898655054<br/>Email : rahuldubey7405@gmail.com
+</div>
+</div>
+</div>
+</div>
+<div class="container" style="padding:10px;font-size:20px;color:grey;text-align:center;">
+Copyright © 2019 NRINotes.com. Powered by NRI Notes. Developed and Maintained by<br/>
+Jasmeet Kaur, Ankit Singh, Anshul Yadav ,Rajat Yadav &amp; Rahul Dubey
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

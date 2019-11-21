@@ -1,0 +1,27 @@
+{% extends 'Layout.html' %}
+{% block content %}
+<div class="container-fluid" style="background-color:#272626;color:#DBD7D6;padding:30px;text-align:justify;">
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<form method="post" action="/CheckLogin/" style="padding:20px;border:2px dotted white;border-radius:15px;">
+{% csrf_token %}
+<div class="form-group">
+<style>
+label{
+	font-size:20px;
+}
+</style>
+<h2><strong>Admin Login Here</strong></h2>
+<label>Username</label>
+<input type="text" class="form-control" name="username">
+<label>Password</label>
+<input type="password" class="form-control" name="password"><br/>
+<button class="btn btn-primary" type="submit">Login</button>
+</div>
+</form>
+</div>
+<div class="col-md-4"></div>
+</div>
+</div>
+{% endblock  %}
